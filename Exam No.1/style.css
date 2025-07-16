@@ -1,8 +1,6 @@
-
-
 /* Import font-style: Poppins */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -61,7 +59,8 @@ main {
   background-color: aliceblue;
 }
 
-main h1, h3 {
+main h1,
+h3 {
   text-align: center;
 }
 
@@ -97,7 +96,7 @@ main h3 {
 
 #destinations {
   height: 175vh;
-  background-color: rgba(167, 165, 165, 0.39)
+  background-color: rgba(167, 165, 165, 0.39);
 }
 
 #cypr {
@@ -171,7 +170,6 @@ main h3 {
   left: 650px;
   text-align: center;
 }
-
 
 #itali:hover {
   color: white;
@@ -255,7 +253,6 @@ main h3 {
   align-items: center;
   justify-content: center;
   gap: 0px;
-
 }
 
 input {
@@ -268,7 +265,7 @@ select {
 
 footer {
   height: 10vh;
-  background-color:azure;
+  background-color: azure;
 }
 
 #footH1 {
@@ -295,18 +292,84 @@ ul {
   list-style: none;
   justify-content: space-evenly;
 }
-  
+
 @media (max-width: 768px) {
-  #franceH1 {
-    right: 90px;
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 
-  #italH1 {
-    right: 90px;
+  nav ul h1 {
+    padding-top: 10px;
+    font-size: 28px;
   }
 
-  #cyprH1 {
-    right: 90px;
+  nav ul li {
+    padding: 10px 0;
   }
 
+  main {
+    height: auto;
+    padding: 20px;
+  }
+
+  #img1 {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  #h1, #par {
+    position: static;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #par {
+    font-size: 18px;
+  }
+
+  #destinations {
+    height: auto;
+    padding: 20px;
+  }
+
+  #cyprImg, #italiaImg, #franceImg {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  #cypr, #itali, #france {
+    position: static;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  #cyprH1,#italH1, #franceH1 {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #bookingPage {
+    height: auto;
+    padding: 20px;
+  }
+
+  #bookForm {
+    width: 90%;
+    position: static;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  #bookH1, #bookH3 {
+    position: static;
+    text-align: center;
+    margin: 10px auto;
+  }
 }

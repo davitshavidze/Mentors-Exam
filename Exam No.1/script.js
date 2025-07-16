@@ -17,3 +17,5 @@ const btn = document.getElementById("btn4");
 btn.addEventListener("click", (e) => {
   window.alert("Form submitted succesfully");
 });
+
+console.log("Pls green card :D")
